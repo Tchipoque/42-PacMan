@@ -1,0 +1,10 @@
+{
+	# Maze configuration
+	"maze_size": [15, 15],
+	"perfect": false,
+	"entry_cell": [0, 0],
+	"exit_cell": [14, 14],
+	"seed": 42,
+	"level_time": 120,
+	"max_levels": 10
+}

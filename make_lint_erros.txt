@@ -1,0 +1,1496 @@
+make lint
+uv run python3 -m flake8 . --exclude=.venv
+./mazegenerator/mazegenerator.py:168:80: E501 line too long (80 > 79 characters)
+./pac-man.py:95:21: E131 continuation line unaligned for hanging indent
+./pac-man.py:115:5: E115 expected an indented block (comment)
+./pac-man.py:133:1: E303 too many blank lines (3)
+./src/animation.py:1:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/animation.py:1:1: F401 'src.constants.*' imported but unused
+./src/animation.py:3:1: E302 expected 2 blank lines, found 1
+./src/animation.py:4:1: W191 indentation contains tabs
+./src/animation.py:5:1: W191 indentation contains tabs
+./src/animation.py:6:1: W191 indentation contains tabs
+./src/animation.py:7:1: W191 indentation contains tabs
+./src/animation.py:8:1: W191 indentation contains tabs
+./src/animation.py:9:1: W191 indentation contains tabs
+./src/animation.py:10:1: W191 indentation contains tabs
+./src/animation.py:12:1: W191 indentation contains tabs
+./src/animation.py:13:1: W191 indentation contains tabs
+./src/animation.py:14:1: W191 indentation contains tabs
+./src/animation.py:16:1: W191 indentation contains tabs
+./src/animation.py:17:1: W191 indentation contains tabs
+./src/animation.py:18:1: W191 indentation contains tabs
+./src/animation.py:19:1: W191 indentation contains tabs
+./src/animation.py:20:1: W191 indentation contains tabs
+./src/animation.py:21:1: W191 indentation contains tabs
+./src/animation.py:22:1: W191 indentation contains tabs
+./src/animation.py:23:1: W191 indentation contains tabs
+./src/animation.py:24:1: W191 indentation contains tabs
+./src/animation.py:26:1: W191 indentation contains tabs
+./src/animation.py:28:1: W191 indentation contains tabs
+./src/animation.py:29:1: W191 indentation contains tabs
+./src/animation.py:30:1: W191 indentation contains tabs
+./src/animation.py:31:1: W191 indentation contains tabs
+./src/animation.py:32:1: W191 indentation contains tabs
+./src/constants.py:16:12: E231 missing whitespace after ','
+./src/constants.py:16:16: E231 missing whitespace after ','
+./src/constants.py:17:12: E231 missing whitespace after ','
+./src/constants.py:17:16: E231 missing whitespace after ','
+./src/entity.py:2:1: F403 'from pygame.locals import *' used; unable to detect undefined names
+./src/entity.py:4:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/entity.py:7:1: E302 expected 2 blank lines, found 1
+./src/entity.py:8:1: W191 indentation contains tabs
+./src/entity.py:9:1: W191 indentation contains tabs
+./src/entity.py:10:1: W191 indentation contains tabs
+./src/entity.py:10:22: F405 'UP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:10:24: E231 missing whitespace after ':'
+./src/entity.py:10:39: E231 missing whitespace after ','
+./src/entity.py:10:40: F405 'DOWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:10:44: E231 missing whitespace after ':'
+./src/entity.py:11:1: W191 indentation contains tabs
+./src/entity.py:11:7: E101 indentation contains mixed spaces and tabs
+./src/entity.py:11:9: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:11:9: E128 continuation line under-indented for visual indent
+./src/entity.py:11:13: E231 missing whitespace after ':'
+./src/entity.py:11:30: F405 'RIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:11:35: E231 missing whitespace after ':'
+./src/entity.py:11:51: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:11:55: E231 missing whitespace after ':'
+./src/entity.py:12:1: W191 indentation contains tabs
+./src/entity.py:12:20: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:13:1: W191 indentation contains tabs
+./src/entity.py:14:1: W191 indentation contains tabs
+./src/entity.py:15:1: W191 indentation contains tabs
+./src/entity.py:16:1: W191 indentation contains tabs
+./src/entity.py:16:16: F405 'WHITE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:17:1: W191 indentation contains tabs
+./src/entity.py:18:1: W191 indentation contains tabs
+./src/entity.py:19:1: W191 indentation contains tabs
+./src/entity.py:20:1: W191 indentation contains tabs
+./src/entity.py:21:1: W191 indentation contains tabs
+./src/entity.py:22:1: W191 indentation contains tabs
+./src/entity.py:23:1: W191 indentation contains tabs
+./src/entity.py:24:1: W191 indentation contains tabs
+./src/entity.py:25:1: W191 indentation contains tabs
+./src/entity.py:27:1: W191 indentation contains tabs
+./src/entity.py:28:1: W191 indentation contains tabs
+./src/entity.py:29:1: W191 indentation contains tabs
+./src/entity.py:30:1: W191 indentation contains tabs
+./src/entity.py:31:1: W191 indentation contains tabs
+./src/entity.py:33:1: W191 indentation contains tabs
+./src/entity.py:34:1: W191 indentation contains tabs
+./src/entity.py:35:1: W191 indentation contains tabs
+./src/entity.py:35:20: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:36:1: W191 indentation contains tabs
+./src/entity.py:37:1: W191 indentation contains tabs
+./src/entity.py:39:1: W191 indentation contains tabs
+./src/entity.py:40:1: W191 indentation contains tabs
+./src/entity.py:41:1: W191 indentation contains tabs
+./src/entity.py:42:1: W191 indentation contains tabs
+./src/entity.py:44:1: W191 indentation contains tabs
+./src/entity.py:45:1: W191 indentation contains tabs
+./src/entity.py:47:1: W191 indentation contains tabs
+./src/entity.py:48:1: W191 indentation contains tabs
+./src/entity.py:49:1: W191 indentation contains tabs
+./src/entity.py:50:1: W191 indentation contains tabs
+./src/entity.py:51:1: W191 indentation contains tabs
+./src/entity.py:52:1: W191 indentation contains tabs
+./src/entity.py:53:1: W191 indentation contains tabs
+./src/entity.py:54:1: W191 indentation contains tabs
+./src/entity.py:55:1: W191 indentation contains tabs
+./src/entity.py:55:28: F405 'PORTAL' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:56:1: W191 indentation contains tabs
+./src/entity.py:56:38: F405 'PORTAL' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:57:1: W191 indentation contains tabs
+./src/entity.py:58:1: W191 indentation contains tabs
+./src/entity.py:59:1: W191 indentation contains tabs
+./src/entity.py:60:1: W191 indentation contains tabs
+./src/entity.py:61:1: W191 indentation contains tabs
+./src/entity.py:63:1: W191 indentation contains tabs
+./src/entity.py:65:1: W191 indentation contains tabs
+./src/entity.py:66:1: W191 indentation contains tabs
+./src/entity.py:66:23: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:67:1: W191 indentation contains tabs
+./src/entity.py:68:1: W191 indentation contains tabs
+./src/entity.py:69:1: W191 indentation contains tabs
+./src/entity.py:70:1: W191 indentation contains tabs
+./src/entity.py:72:1: W191 indentation contains tabs
+./src/entity.py:73:1: W191 indentation contains tabs
+./src/entity.py:74:1: W191 indentation contains tabs
+./src/entity.py:74:15: F405 'UP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:74:19: F405 'DOWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:74:25: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:74:31: F405 'RIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:75:1: W191 indentation contains tabs
+./src/entity.py:76:1: W191 indentation contains tabs
+./src/entity.py:77:1: W191 indentation contains tabs
+./src/entity.py:78:1: W191 indentation contains tabs
+./src/entity.py:79:1: W191 indentation contains tabs
+./src/entity.py:80:1: W191 indentation contains tabs
+./src/entity.py:82:1: W191 indentation contains tabs
+./src/entity.py:83:1: W191 indentation contains tabs
+./src/entity.py:85:1: W191 indentation contains tabs
+./src/entity.py:86:1: W191 indentation contains tabs
+./src/entity.py:87:1: W191 indentation contains tabs
+./src/entity.py:88:1: W191 indentation contains tabs
+./src/entity.py:90:1: W191 indentation contains tabs
+./src/entity.py:91:1: W191 indentation contains tabs
+./src/entity.py:92:1: W191 indentation contains tabs
+./src/entity.py:93:1: W191 indentation contains tabs
+./src/entity.py:94:1: W191 indentation contains tabs
+./src/entity.py:95:1: W191 indentation contains tabs
+./src/entity.py:96:1: W191 indentation contains tabs
+./src/entity.py:97:1: W191 indentation contains tabs
+./src/entity.py:99:1: W191 indentation contains tabs
+./src/entity.py:100:1: W191 indentation contains tabs
+./src/entity.py:101:1: W191 indentation contains tabs
+./src/entity.py:102:1: W191 indentation contains tabs
+./src/entity.py:103:1: W191 indentation contains tabs
+./src/entity.py:105:1: W191 indentation contains tabs
+./src/entity.py:106:1: W191 indentation contains tabs
+./src/entity.py:106:23: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:107:1: W191 indentation contains tabs
+./src/entity.py:108:1: W191 indentation contains tabs
+./src/entity.py:109:1: W191 indentation contains tabs
+./src/entity.py:111:1: W191 indentation contains tabs
+./src/entity.py:112:1: W191 indentation contains tabs
+./src/entity.py:112:24: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:114:1: W191 indentation contains tabs
+./src/entity.py:115:1: W191 indentation contains tabs
+./src/entity.py:116:1: W191 indentation contains tabs
+./src/entity.py:117:1: W191 indentation contains tabs
+./src/entity.py:117:28: E221 multiple spaces before operator
+./src/entity.py:117:59: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:118:1: W191 indentation contains tabs
+./src/entity.py:119:1: W191 indentation contains tabs
+./src/entity.py:120:1: W191 indentation contains tabs
+./src/entity.py:122:1: W191 indentation contains tabs
+./src/entity.py:123:1: W191 indentation contains tabs
+./src/entity.py:124:1: W191 indentation contains tabs
+./src/entity.py:125:1: W191 indentation contains tabs
+./src/entity.py:125:22: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:125:33: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/entity.py:126:1: W191 indentation contains tabs
+./src/entity.py:127:1: W191 indentation contains tabs
+./src/entity.py:128:1: W191 indentation contains tabs
+./src/entity.py:129:1: W191 indentation contains tabs
+./src/entity.py:130:1: W191 indentation contains tabs
+./src/fruit.py:1:1: F401 'pygame' imported but unused
+./src/fruit.py:3:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/fruit.py:7:1: E302 expected 2 blank lines, found 1
+./src/fruit.py:8:1: W191 indentation contains tabs
+./src/fruit.py:8:3: E117 over-indented
+./src/fruit.py:9:1: W191 indentation contains tabs
+./src/fruit.py:9:5: E117 over-indented
+./src/fruit.py:10:1: W191 indentation contains tabs
+./src/fruit.py:11:1: W191 indentation contains tabs
+./src/fruit.py:12:1: W191 indentation contains tabs
+./src/fruit.py:12:17: F405 'FRUIT' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:13:1: W191 indentation contains tabs
+./src/fruit.py:13:18: F405 'GREEN' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:14:1: W191 indentation contains tabs
+./src/fruit.py:15:1: W191 indentation contains tabs
+./src/fruit.py:16:1: W191 indentation contains tabs
+./src/fruit.py:17:1: W191 indentation contains tabs
+./src/fruit.py:18:1: W191 indentation contains tabs
+./src/fruit.py:18:26: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:19:1: W191 indentation contains tabs
+./src/fruit.py:21:1: W191 indentation contains tabs
+./src/fruit.py:22:1: W191 indentation contains tabs
+./src/fruit.py:22:5: E117 over-indented
+./src/fruit.py:23:1: W191 indentation contains tabs
+./src/fruit.py:24:1: W191 indentation contains tabs
+./src/fruit.py:24:7: E117 over-indented
+./src/fruit.py:26:1: W191 indentation contains tabs
+./src/fruit.py:27:1: W191 indentation contains tabs
+./src/fruit.py:27:22: F405 'MAZE_OFFSET_X' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:27:38: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:27:57: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:28:1: W191 indentation contains tabs
+./src/fruit.py:28:22: F405 'MAZE_OFFSET_Y' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:28:38: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:28:58: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:29:1: W191 indentation contains tabs
+./src/fruit.py:31:1: W191 indentation contains tabs
+./src/fruit.py:32:1: W191 indentation contains tabs
+./src/fruit.py:33:1: W191 indentation contains tabs
+./src/fruit.py:34:1: W191 indentation contains tabs
+./src/fruit.py:35:1: W191 indentation contains tabs
+./src/fruit.py:36:1: W191 indentation contains tabs
+./src/fruit.py:38:1: W191 indentation contains tabs
+./src/fruit.py:40:1: W191 indentation contains tabs
+./src/fruit.py:41:1: W191 indentation contains tabs
+./src/fruit.py:42:1: W191 indentation contains tabs
+./src/fruit.py:42:19: F405 'MAZE_OFFSET_X' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:42:41: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:42:53: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:43:1: W191 indentation contains tabs
+./src/fruit.py:43:9: E101 indentation contains mixed spaces and tabs
+./src/fruit.py:43:10: F405 'MAZE_OFFSET_Y' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:43:10: E128 continuation line under-indented for visual indent
+./src/fruit.py:43:32: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:43:45: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/fruit.py:44:1: W191 indentation contains tabs
+./src/fruit.py:45:1: W191 indentation contains tabs
+./src/fruit.py:47:1: W191 indentation contains tabs
+./src/fruit.py:48:1: W191 indentation contains tabs
+./src/fruit.py:50:1: W191 indentation contains tabs
+./src/fruit.py:55:1: W391 blank line at end of file
+./src/ghosts.py:1:1: F401 'pygame' imported but unused
+./src/ghosts.py:2:1: F403 'from pygame.locals import *' used; unable to detect undefined names
+./src/ghosts.py:4:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/ghosts.py:9:1: E302 expected 2 blank lines, found 1
+./src/ghosts.py:10:1: W191 indentation contains tabs
+./src/ghosts.py:11:1: W191 indentation contains tabs
+./src/ghosts.py:12:1: W191 indentation contains tabs
+./src/ghosts.py:12:15: F405 'GHOST' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:13:1: W191 indentation contains tabs
+./src/ghosts.py:14:1: W191 indentation contains tabs
+./src/ghosts.py:15:1: W191 indentation contains tabs
+./src/ghosts.py:16:1: W191 indentation contains tabs
+./src/ghosts.py:17:1: W191 indentation contains tabs
+./src/ghosts.py:18:1: W191 indentation contains tabs
+./src/ghosts.py:19:1: W191 indentation contains tabs
+./src/ghosts.py:21:1: W191 indentation contains tabs
+./src/ghosts.py:22:1: W191 indentation contains tabs
+./src/ghosts.py:23:1: W191 indentation contains tabs
+./src/ghosts.py:24:1: W191 indentation contains tabs
+./src/ghosts.py:24:27: F405 'SCATTER' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:25:1: W191 indentation contains tabs
+./src/ghosts.py:26:1: W191 indentation contains tabs
+./src/ghosts.py:26:29: F405 'CHASE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:27:1: W191 indentation contains tabs
+./src/ghosts.py:28:1: W191 indentation contains tabs
+./src/ghosts.py:28:29: F405 'SPAWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:29:1: W191 indentation contains tabs
+./src/ghosts.py:30:1: W191 indentation contains tabs
+./src/ghosts.py:32:1: W191 indentation contains tabs
+./src/ghosts.py:33:1: W191 indentation contains tabs
+./src/ghosts.py:34:1: W191 indentation contains tabs
+./src/ghosts.py:35:1: W191 indentation contains tabs
+./src/ghosts.py:37:1: W191 indentation contains tabs
+./src/ghosts.py:38:1: W191 indentation contains tabs
+./src/ghosts.py:40:1: W191 indentation contains tabs
+./src/ghosts.py:41:1: W191 indentation contains tabs
+./src/ghosts.py:43:1: W191 indentation contains tabs
+./src/ghosts.py:44:1: W191 indentation contains tabs
+./src/ghosts.py:45:1: W191 indentation contains tabs
+./src/ghosts.py:45:27: F405 'FREIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:46:1: W191 indentation contains tabs
+./src/ghosts.py:47:1: W191 indentation contains tabs
+./src/ghosts.py:49:1: W191 indentation contains tabs
+./src/ghosts.py:50:1: W191 indentation contains tabs
+./src/ghosts.py:51:1: W191 indentation contains tabs
+./src/ghosts.py:52:1: W191 indentation contains tabs
+./src/ghosts.py:54:1: W191 indentation contains tabs
+./src/ghosts.py:55:1: W191 indentation contains tabs
+./src/ghosts.py:57:1: W191 indentation contains tabs
+./src/ghosts.py:58:1: W191 indentation contains tabs
+./src/ghosts.py:59:1: W191 indentation contains tabs
+./src/ghosts.py:61:1: W191 indentation contains tabs
+./src/ghosts.py:62:1: W191 indentation contains tabs
+./src/ghosts.py:63:1: W191 indentation contains tabs
+./src/ghosts.py:63:27: F405 'SPAWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:64:1: W191 indentation contains tabs
+./src/ghosts.py:65:1: W191 indentation contains tabs
+./src/ghosts.py:66:1: W191 indentation contains tabs
+./src/ghosts.py:68:1: W191 indentation contains tabs
+./src/ghosts.py:69:1: W191 indentation contains tabs
+./src/ghosts.py:70:1: W191 indentation contains tabs
+./src/ghosts.py:72:1: W191 indentation contains tabs
+./src/ghosts.py:73:1: W191 indentation contains tabs
+./src/ghosts.py:74:1: W191 indentation contains tabs
+./src/ghosts.py:75:1: W191 indentation contains tabs
+./src/ghosts.py:79:1: E303 too many blank lines (3)
+./src/ghosts.py:80:1: W191 indentation contains tabs
+./src/ghosts.py:81:1: W191 indentation contains tabs
+./src/ghosts.py:82:1: W191 indentation contains tabs
+./src/ghosts.py:82:15: F405 'BLINKY' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:83:1: W191 indentation contains tabs
+./src/ghosts.py:83:16: F405 'RED' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:84:1: W191 indentation contains tabs
+./src/ghosts.py:88:1: W191 indentation contains tabs
+./src/ghosts.py:89:1: W191 indentation contains tabs
+./src/ghosts.py:90:1: W191 indentation contains tabs
+./src/ghosts.py:90:15: F405 'PINKY' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:91:1: W191 indentation contains tabs
+./src/ghosts.py:91:16: F405 'PINK' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:92:1: W191 indentation contains tabs
+./src/ghosts.py:94:1: W191 indentation contains tabs
+./src/ghosts.py:95:1: W191 indentation contains tabs
+./src/ghosts.py:95:23: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:95:33: F405 'NCOLS' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:97:1: W191 indentation contains tabs
+./src/ghosts.py:98:1: W191 indentation contains tabs
+./src/ghosts.py:98:80: E501 line too long (98 > 79 characters)
+./src/ghosts.py:98:86: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:102:1: E303 too many blank lines (3)
+./src/ghosts.py:103:1: W191 indentation contains tabs
+./src/ghosts.py:104:1: W191 indentation contains tabs
+./src/ghosts.py:105:1: W191 indentation contains tabs
+./src/ghosts.py:105:15: F405 'INKY' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:106:1: W191 indentation contains tabs
+./src/ghosts.py:106:16: F405 'TEAL' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:107:1: W191 indentation contains tabs
+./src/ghosts.py:109:1: W191 indentation contains tabs
+./src/ghosts.py:110:1: W191 indentation contains tabs
+./src/ghosts.py:110:23: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:110:33: F405 'NCOLS' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:110:40: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:110:51: F405 'NROWS' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:112:1: W191 indentation contains tabs
+./src/ghosts.py:113:1: W191 indentation contains tabs
+./src/ghosts.py:113:80: E501 line too long (93 > 79 characters)
+./src/ghosts.py:113:81: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:114:1: W191 indentation contains tabs
+./src/ghosts.py:115:1: W191 indentation contains tabs
+./src/ghosts.py:119:1: W191 indentation contains tabs
+./src/ghosts.py:120:1: W191 indentation contains tabs
+./src/ghosts.py:121:1: W191 indentation contains tabs
+./src/ghosts.py:121:15: F405 'CLYDE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:122:1: W191 indentation contains tabs
+./src/ghosts.py:122:16: F405 'ORANGE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:123:1: W191 indentation contains tabs
+./src/ghosts.py:125:1: W191 indentation contains tabs
+./src/ghosts.py:126:1: W191 indentation contains tabs
+./src/ghosts.py:126:26: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:126:37: F405 'NROWS' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:128:1: W191 indentation contains tabs
+./src/ghosts.py:129:1: W191 indentation contains tabs
+./src/ghosts.py:130:1: W191 indentation contains tabs
+./src/ghosts.py:131:1: W191 indentation contains tabs
+./src/ghosts.py:131:13: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:132:1: W191 indentation contains tabs
+./src/ghosts.py:133:1: W191 indentation contains tabs
+./src/ghosts.py:134:1: W191 indentation contains tabs
+./src/ghosts.py:134:80: E501 line too long (99 > 79 characters)
+./src/ghosts.py:134:87: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/ghosts.py:138:1: W191 indentation contains tabs
+./src/ghosts.py:139:1: W191 indentation contains tabs
+./src/ghosts.py:140:1: W191 indentation contains tabs
+./src/ghosts.py:141:1: W191 indentation contains tabs
+./src/ghosts.py:142:1: W191 indentation contains tabs
+./src/ghosts.py:143:1: W191 indentation contains tabs
+./src/ghosts.py:145:1: W191 indentation contains tabs
+./src/ghosts.py:146:1: W191 indentation contains tabs
+./src/ghosts.py:148:1: W191 indentation contains tabs
+./src/ghosts.py:149:1: W191 indentation contains tabs
+./src/ghosts.py:150:1: W191 indentation contains tabs
+./src/ghosts.py:152:1: W191 indentation contains tabs
+./src/ghosts.py:153:1: W191 indentation contains tabs
+./src/ghosts.py:154:1: W191 indentation contains tabs
+./src/ghosts.py:155:1: W191 indentation contains tabs
+./src/ghosts.py:157:1: W191 indentation contains tabs
+./src/ghosts.py:158:1: W191 indentation contains tabs
+./src/ghosts.py:159:1: W191 indentation contains tabs
+./src/ghosts.py:161:1: W191 indentation contains tabs
+./src/ghosts.py:162:1: W191 indentation contains tabs
+./src/ghosts.py:163:1: W191 indentation contains tabs
+./src/ghosts.py:165:1: W191 indentation contains tabs
+./src/ghosts.py:166:1: W191 indentation contains tabs
+./src/ghosts.py:167:1: W191 indentation contains tabs
+./src/ghosts.py:169:1: W191 indentation contains tabs
+./src/ghosts.py:170:1: W191 indentation contains tabs
+./src/ghosts.py:171:1: W191 indentation contains tabs
+./src/ghosts.py:173:1: W191 indentation contains tabs
+./src/ghosts.py:174:1: W191 indentation contains tabs
+./src/ghosts.py:175:1: W191 indentation contains tabs
+./src/ghosts.py:177:1: W191 indentation contains tabs
+./src/ghosts.py:178:1: W191 indentation contains tabs
+./src/ghosts.py:179:1: W191 indentation contains tabs
+./src/ghosts.py:181:1: W191 indentation contains tabs
+./src/ghosts.py:182:1: W191 indentation contains tabs
+./src/ghosts.py:183:1: W191 indentation contains tabs
+./src/modes.py:1:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/modes.py:3:1: E302 expected 2 blank lines, found 1
+./src/modes.py:4:1: W191 indentation contains tabs
+./src/modes.py:5:1: W191 indentation contains tabs
+./src/modes.py:6:1: W191 indentation contains tabs
+./src/modes.py:8:1: W191 indentation contains tabs
+./src/modes.py:9:1: W191 indentation contains tabs
+./src/modes.py:10:1: W191 indentation contains tabs
+./src/modes.py:11:1: W191 indentation contains tabs
+./src/modes.py:11:20: F405 'SCATTER' may be undefined, or defined from star imports: src.constants
+./src/modes.py:12:1: W191 indentation contains tabs
+./src/modes.py:13:1: W191 indentation contains tabs
+./src/modes.py:13:22: F405 'CHASE' may be undefined, or defined from star imports: src.constants
+./src/modes.py:14:1: W191 indentation contains tabs
+./src/modes.py:16:1: W191 indentation contains tabs
+./src/modes.py:17:1: W191 indentation contains tabs
+./src/modes.py:17:15: F405 'SCATTER' may be undefined, or defined from star imports: src.constants
+./src/modes.py:18:1: W191 indentation contains tabs
+./src/modes.py:19:1: W191 indentation contains tabs
+./src/modes.py:21:1: W191 indentation contains tabs
+./src/modes.py:22:1: W191 indentation contains tabs
+./src/modes.py:22:15: F405 'CHASE' may be undefined, or defined from star imports: src.constants
+./src/modes.py:23:1: W191 indentation contains tabs
+./src/modes.py:24:1: W191 indentation contains tabs
+./src/modes.py:28:1: W191 indentation contains tabs
+./src/modes.py:29:1: W191 indentation contains tabs
+./src/modes.py:30:1: W191 indentation contains tabs
+./src/modes.py:31:1: W191 indentation contains tabs
+./src/modes.py:32:1: W191 indentation contains tabs
+./src/modes.py:33:1: W191 indentation contains tabs
+./src/modes.py:35:1: W191 indentation contains tabs
+./src/modes.py:36:1: W191 indentation contains tabs
+./src/modes.py:38:1: W191 indentation contains tabs
+./src/modes.py:38:22: F405 'FREIGHT' may be undefined, or defined from star imports: src.constants
+./src/modes.py:39:1: W191 indentation contains tabs
+./src/modes.py:40:1: W191 indentation contains tabs
+./src/modes.py:41:1: W191 indentation contains tabs
+./src/modes.py:42:1: W191 indentation contains tabs
+./src/modes.py:43:1: W191 indentation contains tabs
+./src/modes.py:44:1: W191 indentation contains tabs
+./src/modes.py:46:1: W191 indentation contains tabs
+./src/modes.py:46:24: F405 'SPAWN' may be undefined, or defined from star imports: src.constants
+./src/modes.py:47:1: W191 indentation contains tabs
+./src/modes.py:48:1: W191 indentation contains tabs
+./src/modes.py:49:1: W191 indentation contains tabs
+./src/modes.py:50:1: W191 indentation contains tabs
+./src/modes.py:51:1: W191 indentation contains tabs
+./src/modes.py:52:1: W191 indentation contains tabs
+./src/modes.py:53:1: W191 indentation contains tabs
+./src/modes.py:54:1: W191 indentation contains tabs
+./src/modes.py:55:1: W191 indentation contains tabs
+./src/modes.py:56:1: W191 indentation contains tabs
+./src/modes.py:58:1: W191 indentation contains tabs
+./src/modes.py:59:1: W191 indentation contains tabs
+./src/modes.py:61:1: W191 indentation contains tabs
+./src/modes.py:62:1: W191 indentation contains tabs
+./src/modes.py:62:22: F405 'FREIGHT' may be undefined, or defined from star imports: src.constants
+./src/modes.py:63:1: W191 indentation contains tabs
+./src/modes.py:64:1: W191 indentation contains tabs
+./src/modes.py:65:1: W191 indentation contains tabs
+./src/modes.py:65:19: F405 'SPAWN' may be undefined, or defined from star imports: src.constants
+./src/modes.py:67:1: W191 indentation contains tabs
+./src/modes.py:68:1: W191 indentation contains tabs
+./src/modes.py:68:23: F405 'SCATTER' may be undefined, or defined from star imports: src.constants
+./src/modes.py:68:32: F405 'CHASE' may be undefined, or defined from star imports: src.constants
+./src/modes.py:69:1: W191 indentation contains tabs
+./src/modes.py:70:1: W191 indentation contains tabs
+./src/modes.py:71:1: W191 indentation contains tabs
+./src/modes.py:71:19: F405 'FREIGHT' may be undefined, or defined from star imports: src.constants
+./src/modes.py:72:1: W191 indentation contains tabs
+./src/modes.py:72:24: F405 'FREIGHT' may be undefined, or defined from star imports: src.constants
+./src/modes.py:73:1: W191 indentation contains tabs
+./src/nodes.py:3:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/nodes.py:6:1: E302 expected 2 blank lines, found 1
+./src/nodes.py:7:1: W191 indentation contains tabs
+./src/nodes.py:8:1: W191 indentation contains tabs
+./src/nodes.py:9:1: W191 indentation contains tabs
+./src/nodes.py:9:21: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:9:23: E231 missing whitespace after ':'
+./src/nodes.py:9:30: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:9:34: E231 missing whitespace after ':'
+./src/nodes.py:9:41: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:9:45: E231 missing whitespace after ':'
+./src/nodes.py:9:52: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:9:57: E231 missing whitespace after ':'
+./src/nodes.py:9:64: F405 'PORTAL' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:9:70: E231 missing whitespace after ':'
+./src/nodes.py:10:1: W191 indentation contains tabs
+./src/nodes.py:10:18: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:10:20: E231 missing whitespace after ':'
+./src/nodes.py:10:22: F405 'PACMAN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:10:30: F405 'BLINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:10:38: F405 'PINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:10:45: F405 'INKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:10:51: F405 'CLYDE' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:10:58: F405 'FRUIT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:11:1: W191 indentation contains tabs
+./src/nodes.py:11:6: E101 indentation contains mixed spaces and tabs
+./src/nodes.py:11:9: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:11:9: E128 continuation line under-indented for visual indent
+./src/nodes.py:11:13: E231 missing whitespace after ':'
+./src/nodes.py:11:15: F405 'PACMAN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:11:23: F405 'BLINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:11:31: F405 'PINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:11:38: F405 'INKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:11:44: F405 'CLYDE' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:11:51: F405 'FRUIT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:12:1: W191 indentation contains tabs
+./src/nodes.py:12:6: E101 indentation contains mixed spaces and tabs
+./src/nodes.py:12:9: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:12:13: E231 missing whitespace after ':'
+./src/nodes.py:12:15: F405 'PACMAN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:12:23: F405 'BLINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:12:31: F405 'PINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:12:38: F405 'INKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:12:44: F405 'CLYDE' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:12:51: F405 'FRUIT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:13:1: W191 indentation contains tabs
+./src/nodes.py:13:6: E101 indentation contains mixed spaces and tabs
+./src/nodes.py:13:9: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:13:14: E231 missing whitespace after ':'
+./src/nodes.py:13:16: F405 'PACMAN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:13:24: F405 'BLINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:13:32: F405 'PINKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:13:39: F405 'INKY' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:13:45: F405 'CLYDE' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:13:52: F405 'FRUIT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:15:1: W191 indentation contains tabs
+./src/nodes.py:16:1: W191 indentation contains tabs
+./src/nodes.py:17:1: W191 indentation contains tabs
+./src/nodes.py:19:1: W191 indentation contains tabs
+./src/nodes.py:20:1: W191 indentation contains tabs
+./src/nodes.py:21:1: W191 indentation contains tabs
+./src/nodes.py:23:1: W191 indentation contains tabs
+./src/nodes.py:24:1: W191 indentation contains tabs
+./src/nodes.py:25:1: W191 indentation contains tabs
+./src/nodes.py:26:1: W191 indentation contains tabs
+./src/nodes.py:27:1: W191 indentation contains tabs
+./src/nodes.py:28:1: W191 indentation contains tabs
+./src/nodes.py:28:30: F405 'WHITE' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:29:1: W191 indentation contains tabs
+./src/nodes.py:29:32: F405 'RED' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:33:1: E303 too many blank lines (3)
+./src/nodes.py:34:1: W191 indentation contains tabs
+./src/nodes.py:35:1: W191 indentation contains tabs
+./src/nodes.py:36:1: W191 indentation contains tabs
+./src/nodes.py:37:1: W191 indentation contains tabs
+./src/nodes.py:38:1: W191 indentation contains tabs
+./src/nodes.py:39:1: W191 indentation contains tabs
+./src/nodes.py:40:1: W191 indentation contains tabs
+./src/nodes.py:41:1: W191 indentation contains tabs
+./src/nodes.py:42:1: W191 indentation contains tabs
+./src/nodes.py:43:1: W191 indentation contains tabs
+./src/nodes.py:44:1: W191 indentation contains tabs
+./src/nodes.py:45:1: W191 indentation contains tabs
+./src/nodes.py:46:1: W191 indentation contains tabs
+./src/nodes.py:48:1: E265 block comment should start with '# '
+./src/nodes.py:49:1: W191 indentation contains tabs
+./src/nodes.py:50:1: W191 indentation contains tabs
+./src/nodes.py:51:1: W191 indentation contains tabs
+./src/nodes.py:52:1: W191 indentation contains tabs
+./src/nodes.py:53:1: W191 indentation contains tabs
+./src/nodes.py:54:1: W191 indentation contains tabs
+./src/nodes.py:55:1: W191 indentation contains tabs
+./src/nodes.py:57:1: W191 indentation contains tabs
+./src/nodes.py:58:1: W191 indentation contains tabs
+./src/nodes.py:58:3: F841 local variable 'NORTH' is assigned to but never used
+./src/nodes.py:58:23: F841 local variable 'WEST' is assigned to but never used
+./src/nodes.py:59:1: W191 indentation contains tabs
+./src/nodes.py:60:1: W191 indentation contains tabs
+./src/nodes.py:61:1: W191 indentation contains tabs
+./src/nodes.py:62:1: W191 indentation contains tabs
+./src/nodes.py:63:1: W191 indentation contains tabs
+./src/nodes.py:64:1: W191 indentation contains tabs
+./src/nodes.py:65:1: W191 indentation contains tabs
+./src/nodes.py:66:1: W191 indentation contains tabs
+./src/nodes.py:67:1: W191 indentation contains tabs
+./src/nodes.py:67:36: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:68:1: W191 indentation contains tabs
+./src/nodes.py:68:41: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:70:1: W191 indentation contains tabs
+./src/nodes.py:71:1: W191 indentation contains tabs
+./src/nodes.py:72:1: W191 indentation contains tabs
+./src/nodes.py:73:1: W191 indentation contains tabs
+./src/nodes.py:73:36: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:74:1: W191 indentation contains tabs
+./src/nodes.py:74:41: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:76:1: W191 indentation contains tabs
+./src/nodes.py:77:1: W191 indentation contains tabs
+./src/nodes.py:78:1: W191 indentation contains tabs
+./src/nodes.py:79:1: W191 indentation contains tabs
+./src/nodes.py:80:1: W191 indentation contains tabs
+./src/nodes.py:82:1: W191 indentation contains tabs
+./src/nodes.py:83:1: W191 indentation contains tabs
+./src/nodes.py:84:1: W191 indentation contains tabs
+./src/nodes.py:84:56: F405 'NCOLS' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:85:1: W191 indentation contains tabs
+./src/nodes.py:86:1: W191 indentation contains tabs
+./src/nodes.py:88:1: W191 indentation contains tabs
+./src/nodes.py:89:1: W191 indentation contains tabs
+./src/nodes.py:90:1: W191 indentation contains tabs
+./src/nodes.py:92:1: W191 indentation contains tabs
+./src/nodes.py:93:1: W191 indentation contains tabs
+./src/nodes.py:94:1: W191 indentation contains tabs
+./src/nodes.py:95:1: W191 indentation contains tabs
+./src/nodes.py:96:1: W191 indentation contains tabs
+./src/nodes.py:98:1: W191 indentation contains tabs
+./src/nodes.py:99:1: W191 indentation contains tabs
+./src/nodes.py:99:80: E501 line too long (85 > 79 characters)
+./src/nodes.py:100:1: W191 indentation contains tabs
+./src/nodes.py:101:1: W191 indentation contains tabs
+./src/nodes.py:106:1: E303 too many blank lines (4)
+./src/nodes.py:106:1: E265 block comment should start with '# '
+./src/nodes.py:108:1: W191 indentation contains tabs
+./src/nodes.py:108:2: E301 expected 1 blank line, found 0
+./src/nodes.py:109:1: W191 indentation contains tabs
+./src/nodes.py:111:1: W191 indentation contains tabs
+./src/nodes.py:112:1: W191 indentation contains tabs
+./src/nodes.py:113:1: W191 indentation contains tabs
+./src/nodes.py:114:1: W191 indentation contains tabs
+./src/nodes.py:115:1: W191 indentation contains tabs
+./src/nodes.py:116:1: W191 indentation contains tabs
+./src/nodes.py:118:1: W191 indentation contains tabs
+./src/nodes.py:119:1: W191 indentation contains tabs
+./src/nodes.py:121:1: W191 indentation contains tabs
+./src/nodes.py:122:1: W191 indentation contains tabs
+./src/nodes.py:122:11: F405 'MAZE_OFFSET_X' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:122:31: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:122:43: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:123:1: W191 indentation contains tabs
+./src/nodes.py:123:5: F405 'MAZE_OFFSET_Y' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:123:5: E128 continuation line under-indented for visual indent
+./src/nodes.py:123:25: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:123:38: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:125:1: W191 indentation contains tabs
+./src/nodes.py:126:1: W191 indentation contains tabs
+./src/nodes.py:127:1: W191 indentation contains tabs
+./src/nodes.py:128:1: W191 indentation contains tabs
+./src/nodes.py:129:1: W191 indentation contains tabs
+./src/nodes.py:130:1: W191 indentation contains tabs
+./src/nodes.py:131:1: W191 indentation contains tabs
+./src/nodes.py:132:1: W191 indentation contains tabs
+./src/nodes.py:133:1: W191 indentation contains tabs
+./src/nodes.py:134:1: W191 indentation contains tabs
+./src/nodes.py:134:36: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:135:1: W191 indentation contains tabs
+./src/nodes.py:135:41: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:136:1: W191 indentation contains tabs
+./src/nodes.py:137:1: W191 indentation contains tabs
+./src/nodes.py:138:1: W191 indentation contains tabs
+./src/nodes.py:140:1: W191 indentation contains tabs
+./src/nodes.py:141:1: W191 indentation contains tabs
+./src/nodes.py:142:1: W191 indentation contains tabs
+./src/nodes.py:143:1: W191 indentation contains tabs
+./src/nodes.py:144:1: W191 indentation contains tabs
+./src/nodes.py:145:1: W191 indentation contains tabs
+./src/nodes.py:146:1: W191 indentation contains tabs
+./src/nodes.py:147:1: W191 indentation contains tabs
+./src/nodes.py:148:1: W191 indentation contains tabs
+./src/nodes.py:149:1: W191 indentation contains tabs
+./src/nodes.py:150:1: W191 indentation contains tabs
+./src/nodes.py:150:36: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:151:1: W191 indentation contains tabs
+./src/nodes.py:151:41: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:152:1: W191 indentation contains tabs
+./src/nodes.py:153:1: W191 indentation contains tabs
+./src/nodes.py:154:1: W191 indentation contains tabs
+./src/nodes.py:156:1: W191 indentation contains tabs
+./src/nodes.py:157:1: W191 indentation contains tabs
+./src/nodes.py:158:1: W191 indentation contains tabs
+./src/nodes.py:159:1: W191 indentation contains tabs
+./src/nodes.py:161:1: W191 indentation contains tabs
+./src/nodes.py:162:1: W191 indentation contains tabs
+./src/nodes.py:163:1: W191 indentation contains tabs
+./src/nodes.py:164:1: W191 indentation contains tabs
+./src/nodes.py:165:1: W191 indentation contains tabs
+./src/nodes.py:167:1: W191 indentation contains tabs
+./src/nodes.py:168:1: W191 indentation contains tabs
+./src/nodes.py:169:1: W191 indentation contains tabs
+./src/nodes.py:171:1: W191 indentation contains tabs
+./src/nodes.py:172:1: W191 indentation contains tabs
+./src/nodes.py:173:1: W191 indentation contains tabs
+./src/nodes.py:174:1: W191 indentation contains tabs
+./src/nodes.py:175:1: W191 indentation contains tabs
+./src/nodes.py:175:34: F405 'PORTAL' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:176:1: W191 indentation contains tabs
+./src/nodes.py:176:34: F405 'PORTAL' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:178:1: W191 indentation contains tabs
+./src/nodes.py:179:1: W191 indentation contains tabs
+./src/nodes.py:179:28: E231 missing whitespace after ','
+./src/nodes.py:179:32: E231 missing whitespace after ','
+./src/nodes.py:179:36: E231 missing whitespace after ','
+./src/nodes.py:179:40: E231 missing whitespace after ','
+./src/nodes.py:180:1: W191 indentation contains tabs
+./src/nodes.py:180:8: E101 indentation contains mixed spaces and tabs
+./src/nodes.py:180:9: E128 continuation line under-indented for visual indent
+./src/nodes.py:180:13: E231 missing whitespace after ','
+./src/nodes.py:180:17: E231 missing whitespace after ','
+./src/nodes.py:180:21: E231 missing whitespace after ','
+./src/nodes.py:180:25: E231 missing whitespace after ','
+./src/nodes.py:181:1: W191 indentation contains tabs
+./src/nodes.py:181:8: E101 indentation contains mixed spaces and tabs
+./src/nodes.py:181:13: E231 missing whitespace after ','
+./src/nodes.py:181:17: E231 missing whitespace after ','
+./src/nodes.py:181:21: E231 missing whitespace after ','
+./src/nodes.py:181:25: E231 missing whitespace after ','
+./src/nodes.py:182:1: W191 indentation contains tabs
+./src/nodes.py:182:8: E101 indentation contains mixed spaces and tabs
+./src/nodes.py:182:13: E231 missing whitespace after ','
+./src/nodes.py:182:17: E231 missing whitespace after ','
+./src/nodes.py:182:21: E231 missing whitespace after ','
+./src/nodes.py:182:25: E231 missing whitespace after ','
+./src/nodes.py:183:1: W191 indentation contains tabs
+./src/nodes.py:183:8: E101 indentation contains mixed spaces and tabs
+./src/nodes.py:183:13: E231 missing whitespace after ','
+./src/nodes.py:183:17: E231 missing whitespace after ','
+./src/nodes.py:183:21: E231 missing whitespace after ','
+./src/nodes.py:183:25: E231 missing whitespace after ','
+./src/nodes.py:185:1: W191 indentation contains tabs
+./src/nodes.py:186:1: W191 indentation contains tabs
+./src/nodes.py:187:1: W191 indentation contains tabs
+./src/nodes.py:188:1: W191 indentation contains tabs
+./src/nodes.py:189:1: W191 indentation contains tabs
+./src/nodes.py:191:1: W191 indentation contains tabs
+./src/nodes.py:192:1: W191 indentation contains tabs
+./src/nodes.py:193:1: W191 indentation contains tabs
+./src/nodes.py:194:1: W191 indentation contains tabs
+./src/nodes.py:196:1: W191 indentation contains tabs
+./src/nodes.py:197:1: W191 indentation contains tabs
+./src/nodes.py:198:1: W191 indentation contains tabs
+./src/nodes.py:199:1: W191 indentation contains tabs
+./src/nodes.py:201:1: W191 indentation contains tabs
+./src/nodes.py:202:1: W191 indentation contains tabs
+./src/nodes.py:203:1: W191 indentation contains tabs
+./src/nodes.py:204:1: W191 indentation contains tabs
+./src/nodes.py:206:1: W191 indentation contains tabs
+./src/nodes.py:207:1: W191 indentation contains tabs
+./src/nodes.py:208:1: W191 indentation contains tabs
+./src/nodes.py:210:1: W191 indentation contains tabs
+./src/nodes.py:211:1: W191 indentation contains tabs
+./src/nodes.py:212:1: W191 indentation contains tabs
+./src/nodes.py:214:1: W191 indentation contains tabs
+./src/nodes.py:215:1: W191 indentation contains tabs
+./src/nodes.py:215:42: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:217:1: W191 indentation contains tabs
+./src/nodes.py:218:1: W191 indentation contains tabs
+./src/nodes.py:218:43: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/nodes.py:220:1: W191 indentation contains tabs
+./src/nodes.py:221:1: W191 indentation contains tabs
+./src/nodes.py:222:1: W191 indentation contains tabs
+./src/nodes.py:224:1: W191 indentation contains tabs
+./src/nodes.py:225:1: W191 indentation contains tabs
+./src/nodes.py:226:1: W191 indentation contains tabs
+./src/nodes.py:228:1: W191 indentation contains tabs
+./src/nodes.py:229:1: W191 indentation contains tabs
+./src/nodes.py:230:1: W191 indentation contains tabs
+./src/pacman.py:2:1: F403 'from pygame.locals import *' used; unable to detect undefined names
+./src/pacman.py:4:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/pacman.py:8:1: E302 expected 2 blank lines, found 1
+./src/pacman.py:9:1: W191 indentation contains tabs
+./src/pacman.py:10:1: W191 indentation contains tabs
+./src/pacman.py:10:29: E202 whitespace before ')'
+./src/pacman.py:11:1: W191 indentation contains tabs
+./src/pacman.py:11:15: F405 'PACMAN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:12:1: W191 indentation contains tabs
+./src/pacman.py:12:22: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:12:26: E231 missing whitespace after ':'
+./src/pacman.py:12:38: F405 'UP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:12:40: E231 missing whitespace after ':'
+./src/pacman.py:12:50: E231 missing whitespace after ','
+./src/pacman.py:12:56: F405 'DOWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:12:60: E231 missing whitespace after ':'
+./src/pacman.py:12:70: E231 missing whitespace after ','
+./src/pacman.py:12:75: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:12:79: E231 missing whitespace after ':'
+./src/pacman.py:12:80: E501 line too long (113 > 79 characters)
+./src/pacman.py:12:90: E231 missing whitespace after ','
+./src/pacman.py:12:95: F405 'RIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:12:100: E231 missing whitespace after ':'
+./src/pacman.py:12:110: E231 missing whitespace after ','
+./src/pacman.py:13:1: W191 indentation contains tabs
+./src/pacman.py:13:20: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:14:1: W191 indentation contains tabs
+./src/pacman.py:14:22: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:15:1: W191 indentation contains tabs
+./src/pacman.py:16:1: W191 indentation contains tabs
+./src/pacman.py:16:16: F405 'YELLOW' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:17:1: W191 indentation contains tabs
+./src/pacman.py:17:20: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:18:1: W191 indentation contains tabs
+./src/pacman.py:18:24: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:19:1: W191 indentation contains tabs
+./src/pacman.py:20:1: W191 indentation contains tabs
+./src/pacman.py:21:1: W191 indentation contains tabs
+./src/pacman.py:22:1: W191 indentation contains tabs
+./src/pacman.py:23:1: W191 indentation contains tabs
+./src/pacman.py:24:1: W191 indentation contains tabs
+./src/pacman.py:26:1: W191 indentation contains tabs
+./src/pacman.py:27:1: W191 indentation contains tabs
+./src/pacman.py:29:1: W191 indentation contains tabs
+./src/pacman.py:30:1: W191 indentation contains tabs
+./src/pacman.py:31:1: W191 indentation contains tabs
+./src/pacman.py:31:20: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:32:1: W191 indentation contains tabs
+./src/pacman.py:32:24: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:33:1: W191 indentation contains tabs
+./src/pacman.py:34:1: W191 indentation contains tabs
+./src/pacman.py:35:1: W191 indentation contains tabs
+./src/pacman.py:37:1: W191 indentation contains tabs
+./src/pacman.py:38:1: W191 indentation contains tabs
+./src/pacman.py:39:1: W191 indentation contains tabs
+./src/pacman.py:39:20: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:41:1: W191 indentation contains tabs
+./src/pacman.py:42:1: W191 indentation contains tabs
+./src/pacman.py:43:1: W191 indentation contains tabs
+./src/pacman.py:44:1: W191 indentation contains tabs
+./src/pacman.py:45:1: W191 indentation contains tabs
+./src/pacman.py:46:1: W191 indentation contains tabs
+./src/pacman.py:47:1: W191 indentation contains tabs
+./src/pacman.py:47:27: F405 'PORTAL' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:48:1: W191 indentation contains tabs
+./src/pacman.py:48:37: F405 'PORTAL' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:49:1: W191 indentation contains tabs
+./src/pacman.py:50:1: W191 indentation contains tabs
+./src/pacman.py:51:1: W191 indentation contains tabs
+./src/pacman.py:52:1: W191 indentation contains tabs
+./src/pacman.py:53:1: W191 indentation contains tabs
+./src/pacman.py:54:1: W191 indentation contains tabs
+./src/pacman.py:55:1: W191 indentation contains tabs
+./src/pacman.py:55:22: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:56:1: W191 indentation contains tabs
+./src/pacman.py:57:1: W191 indentation contains tabs
+./src/pacman.py:58:1: W191 indentation contains tabs
+./src/pacman.py:59:1: W191 indentation contains tabs
+./src/pacman.py:61:1: W191 indentation contains tabs
+./src/pacman.py:62:1: W191 indentation contains tabs
+./src/pacman.py:62:23: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:63:1: W191 indentation contains tabs
+./src/pacman.py:64:1: W191 indentation contains tabs
+./src/pacman.py:65:1: W191 indentation contains tabs
+./src/pacman.py:67:1: W191 indentation contains tabs
+./src/pacman.py:68:1: W191 indentation contains tabs
+./src/pacman.py:69:1: W191 indentation contains tabs
+./src/pacman.py:70:1: W191 indentation contains tabs
+./src/pacman.py:72:1: W191 indentation contains tabs
+./src/pacman.py:73:1: W191 indentation contains tabs
+./src/pacman.py:74:1: W191 indentation contains tabs
+./src/pacman.py:74:18: F405 'K_UP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:75:1: W191 indentation contains tabs
+./src/pacman.py:75:11: F405 'UP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:76:1: W191 indentation contains tabs
+./src/pacman.py:76:18: F405 'K_DOWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:77:1: W191 indentation contains tabs
+./src/pacman.py:77:11: F405 'DOWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:78:1: W191 indentation contains tabs
+./src/pacman.py:78:18: F405 'K_LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:79:1: W191 indentation contains tabs
+./src/pacman.py:79:11: F405 'LEFT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:80:1: W191 indentation contains tabs
+./src/pacman.py:80:18: F405 'K_RIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:81:1: W191 indentation contains tabs
+./src/pacman.py:81:11: F405 'RIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:82:1: W191 indentation contains tabs
+./src/pacman.py:82:10: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:84:1: W191 indentation contains tabs
+./src/pacman.py:85:1: W191 indentation contains tabs
+./src/pacman.py:86:1: W191 indentation contains tabs
+./src/pacman.py:87:1: W191 indentation contains tabs
+./src/pacman.py:88:1: W191 indentation contains tabs
+./src/pacman.py:89:1: W191 indentation contains tabs
+./src/pacman.py:90:1: W191 indentation contains tabs
+./src/pacman.py:91:1: W191 indentation contains tabs
+./src/pacman.py:93:1: W191 indentation contains tabs
+./src/pacman.py:94:1: W191 indentation contains tabs
+./src/pacman.py:95:1: W191 indentation contains tabs
+./src/pacman.py:96:1: W191 indentation contains tabs
+./src/pacman.py:97:1: W191 indentation contains tabs
+./src/pacman.py:99:1: W191 indentation contains tabs
+./src/pacman.py:100:1: W191 indentation contains tabs
+./src/pacman.py:100:23: F405 'STOP' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/pacman.py:101:1: W191 indentation contains tabs
+./src/pacman.py:102:1: W191 indentation contains tabs
+./src/pacman.py:103:1: W191 indentation contains tabs
+./src/pacman.py:105:1: W191 indentation contains tabs
+./src/pacman.py:106:1: W191 indentation contains tabs
+./src/pacman.py:107:1: W191 indentation contains tabs
+./src/pacman.py:108:1: W191 indentation contains tabs
+./src/pacman.py:109:1: W191 indentation contains tabs
+./src/pacman.py:111:1: W191 indentation contains tabs
+./src/pacman.py:112:1: W191 indentation contains tabs
+./src/pacman.py:114:1: W191 indentation contains tabs
+./src/pacman.py:115:1: W191 indentation contains tabs
+./src/pacman.py:116:1: W191 indentation contains tabs
+./src/pacman.py:117:1: W191 indentation contains tabs
+./src/pacman.py:118:1: W191 indentation contains tabs
+./src/pacman.py:119:1: W191 indentation contains tabs
+./src/pacman.py:120:1: W191 indentation contains tabs
+./src/pauser.py:2:1: W191 indentation contains tabs
+./src/pauser.py:2:27: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:2:29: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:3:1: W191 indentation contains tabs
+./src/pauser.py:4:1: W191 indentation contains tabs
+./src/pauser.py:5:1: W191 indentation contains tabs
+./src/pauser.py:6:1: W191 indentation contains tabs
+./src/pauser.py:8:1: W191 indentation contains tabs
+./src/pauser.py:9:1: W191 indentation contains tabs
+./src/pauser.py:10:1: W191 indentation contains tabs
+./src/pauser.py:11:1: W191 indentation contains tabs
+./src/pauser.py:12:1: W191 indentation contains tabs
+./src/pauser.py:13:1: W191 indentation contains tabs
+./src/pauser.py:14:1: W191 indentation contains tabs
+./src/pauser.py:15:1: W191 indentation contains tabs
+./src/pauser.py:16:1: W191 indentation contains tabs
+./src/pauser.py:18:1: W191 indentation contains tabs
+./src/pauser.py:18:33: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:18:35: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:18:52: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:18:54: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:18:65: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:18:67: E251 unexpected spaces around keyword / parameter equals
+./src/pauser.py:19:1: W191 indentation contains tabs
+./src/pauser.py:20:1: W191 indentation contains tabs
+./src/pauser.py:21:1: W191 indentation contains tabs
+./src/pauser.py:22:1: W191 indentation contains tabs
+./src/pauser.py:24:1: W191 indentation contains tabs
+./src/pauser.py:25:1: W191 indentation contains tabs
+./src/pellets.py:3:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/pellets.py:6:1: E302 expected 2 blank lines, found 1
+./src/pellets.py:7:1: W191 indentation contains tabs
+./src/pellets.py:8:1: W191 indentation contains tabs
+./src/pellets.py:8:15: F405 'PELLET' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:9:1: W191 indentation contains tabs
+./src/pellets.py:10:1: W191 indentation contains tabs
+./src/pellets.py:10:13: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:10:25: F405 'MAZE_OFFSET_X' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:10:41: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:11:1: W191 indentation contains tabs
+./src/pellets.py:11:10: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:11:23: F405 'MAZE_OFFSET_Y' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:11:39: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:12:1: W191 indentation contains tabs
+./src/pellets.py:13:1: W191 indentation contains tabs
+./src/pellets.py:13:16: F405 'WHITE' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:15:1: W191 indentation contains tabs
+./src/pellets.py:15:25: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:16:1: W191 indentation contains tabs
+./src/pellets.py:16:32: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:17:1: W191 indentation contains tabs
+./src/pellets.py:18:1: W191 indentation contains tabs
+./src/pellets.py:20:1: W191 indentation contains tabs
+./src/pellets.py:21:1: W191 indentation contains tabs
+./src/pellets.py:22:1: W191 indentation contains tabs
+./src/pellets.py:23:1: W191 indentation contains tabs
+./src/pellets.py:27:1: W191 indentation contains tabs
+./src/pellets.py:28:1: W191 indentation contains tabs
+./src/pellets.py:29:1: W191 indentation contains tabs
+./src/pellets.py:29:15: F405 'POWERPELLET' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:30:1: W191 indentation contains tabs
+./src/pellets.py:30:25: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/pellets.py:31:1: W191 indentation contains tabs
+./src/pellets.py:32:1: W191 indentation contains tabs
+./src/pellets.py:33:1: W191 indentation contains tabs
+./src/pellets.py:33:13: E225 missing whitespace around operator
+./src/pellets.py:35:1: W191 indentation contains tabs
+./src/pellets.py:36:1: W191 indentation contains tabs
+./src/pellets.py:37:1: W191 indentation contains tabs
+./src/pellets.py:38:1: W191 indentation contains tabs
+./src/pellets.py:39:1: W191 indentation contains tabs
+./src/pellets.py:43:1: E303 too many blank lines (3)
+./src/pellets.py:44:1: W191 indentation contains tabs
+./src/pellets.py:45:1: W191 indentation contains tabs
+./src/pellets.py:46:1: W191 indentation contains tabs
+./src/pellets.py:47:1: W191 indentation contains tabs
+./src/pellets.py:48:1: W191 indentation contains tabs
+./src/pellets.py:50:1: W191 indentation contains tabs
+./src/pellets.py:51:1: W191 indentation contains tabs
+./src/pellets.py:52:1: W191 indentation contains tabs
+./src/pellets.py:54:1: W191 indentation contains tabs
+./src/pellets.py:55:1: W191 indentation contains tabs
+./src/pellets.py:56:1: W191 indentation contains tabs
+./src/pellets.py:58:1: W191 indentation contains tabs
+./src/pellets.py:59:1: W191 indentation contains tabs
+./src/pellets.py:60:1: W191 indentation contains tabs
+./src/pellets.py:61:1: W191 indentation contains tabs
+./src/pellets.py:62:1: W191 indentation contains tabs
+./src/pellets.py:63:1: W191 indentation contains tabs
+./src/pellets.py:64:1: W191 indentation contains tabs
+./src/pellets.py:65:1: W191 indentation contains tabs
+./src/pellets.py:66:1: W191 indentation contains tabs
+./src/pellets.py:67:1: W191 indentation contains tabs
+./src/pellets.py:69:1: W191 indentation contains tabs
+./src/pellets.py:70:1: W191 indentation contains tabs
+./src/pellets.py:72:1: W191 indentation contains tabs
+./src/pellets.py:73:1: W191 indentation contains tabs
+./src/pellets.py:74:1: W191 indentation contains tabs
+./src/pellets.py:75:1: W191 indentation contains tabs
+./src/pellets.py:77:1: W191 indentation contains tabs
+./src/pellets.py:78:1: W191 indentation contains tabs
+./src/pellets.py:79:1: W191 indentation contains tabs
+./src/run.py:5:1: F403 'from pygame.locals import *' used; unable to detect undefined names
+./src/run.py:10:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/run.py:43:9: E303 too many blank lines (2)
+./src/run.py:43:47: F405 'SCREENSIZE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:69:41: F405 'YELLOW' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:84:33: F405 'READYTXT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:94:33: F405 'READYTXT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:104:50: F405 'SCREENSIZE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:105:30: F405 'BLACK' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:108:55: F405 'SCREENSIZE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:109:35: F405 'BLACK' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:111:56: F405 'SCREENSIZE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:112:36: F405 'BLACK' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:223:30: F405 'QUIT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:227:32: F405 'KEYDOWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:229:37: F405 'K_SPACE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:237:57: F405 'PAUSETXT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:241:37: F405 'K_RETURN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:247:42: F405 'FREIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:255:25: F405 'WHITE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:269:48: F405 'SPAWN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:277:53: F405 'GAMEOVERTXT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:303:21: F405 'WHITE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:333:31: F405 'POWERPELLET' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:353:26: F405 'BLACK' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:367:21: F405 'SCREENHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:385:22: F405 'MAZE_OFFSET_X' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:385:42: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:386:22: F405 'MAZE_OFFSET_Y' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:386:42: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:391:25: F405 'GREEN' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:392:34: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:392:45: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:399:25: F405 'BLUE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:401:31: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:408:25: F405 'BLUE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:409:35: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:410:31: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:410:47: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:417:25: F405 'BLUE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:419:35: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:426:25: F405 'BLUE' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:427:31: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:428:31: F405 'TILEWIDTH' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:428:47: F405 'TILEHEIGHT' may be undefined, or defined from star imports: pygame.locals, src.constants
+./src/run.py:443:1: W391 blank line at end of file
+./src/sprites.py:2:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/sprites.py:10:1: E302 expected 2 blank lines, found 1
+./src/sprites.py:11:1: W191 indentation contains tabs
+./src/sprites.py:12:1: W191 indentation contains tabs
+./src/sprites.py:12:4: E117 over-indented
+./src/sprites.py:13:1: W191 indentation contains tabs
+./src/sprites.py:13:37: E231 missing whitespace after ','
+./src/sprites.py:14:1: W191 indentation contains tabs
+./src/sprites.py:15:1: W191 indentation contains tabs
+./src/sprites.py:15:57: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:16:1: W191 indentation contains tabs
+./src/sprites.py:16:60: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:17:1: W191 indentation contains tabs
+./src/sprites.py:19:1: W191 indentation contains tabs
+./src/sprites.py:20:1: W191 indentation contains tabs
+./src/sprites.py:20:4: E117 over-indented
+./src/sprites.py:20:9: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:21:1: W191 indentation contains tabs
+./src/sprites.py:21:9: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:22:1: W191 indentation contains tabs
+./src/sprites.py:23:1: W191 indentation contains tabs
+./src/sprites.py:27:1: W191 indentation contains tabs
+./src/sprites.py:27:3: E117 over-indented
+./src/sprites.py:28:1: W191 indentation contains tabs
+./src/sprites.py:28:5: E117 over-indented
+./src/sprites.py:29:1: W191 indentation contains tabs
+./src/sprites.py:30:1: W191 indentation contains tabs
+./src/sprites.py:31:1: W191 indentation contains tabs
+./src/sprites.py:32:1: W191 indentation contains tabs
+./src/sprites.py:33:1: W191 indentation contains tabs
+./src/sprites.py:35:1: W191 indentation contains tabs
+./src/sprites.py:36:1: W191 indentation contains tabs
+./src/sprites.py:36:5: E117 over-indented
+./src/sprites.py:38:1: W191 indentation contains tabs
+./src/sprites.py:39:1: W191 indentation contains tabs
+./src/sprites.py:39:5: E117 over-indented
+./src/sprites.py:39:57: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:39:70: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:39:80: E501 line too long (80 > 79 characters)
+./src/sprites.py:41:1: W191 indentation contains tabs
+./src/sprites.py:41:60: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:41:71: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:41:80: E501 line too long (82 > 79 characters)
+./src/sprites.py:42:1: W191 indentation contains tabs
+./src/sprites.py:44:1: W191 indentation contains tabs
+./src/sprites.py:45:1: W191 indentation contains tabs
+./src/sprites.py:45:5: E117 over-indented
+./src/sprites.py:45:21: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:45:41: E231 missing whitespace after ','
+./src/sprites.py:46:1: W191 indentation contains tabs
+./src/sprites.py:46:21: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:46:43: E231 missing whitespace after ','
+./src/sprites.py:47:1: W191 indentation contains tabs
+./src/sprites.py:47:21: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:47:40: E231 missing whitespace after ','
+./src/sprites.py:48:1: W191 indentation contains tabs
+./src/sprites.py:48:21: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:48:41: E231 missing whitespace after ','
+./src/sprites.py:49:1: W191 indentation contains tabs
+./src/sprites.py:49:80: E501 line too long (165 > 79 characters)
+./src/sprites.py:51:1: W191 indentation contains tabs
+./src/sprites.py:52:1: W191 indentation contains tabs
+./src/sprites.py:52:5: E117 over-indented
+./src/sprites.py:52:26: E712 comparison to True should be 'if cond is True:' or 'if cond:'
+./src/sprites.py:53:1: W191 indentation contains tabs
+./src/sprites.py:53:7: E117 over-indented
+./src/sprites.py:53:35: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:54:1: W191 indentation contains tabs
+./src/sprites.py:54:9: E117 over-indented
+./src/sprites.py:54:60: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:55:1: W191 indentation contains tabs
+./src/sprites.py:56:1: W191 indentation contains tabs
+./src/sprites.py:56:37: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:57:1: W191 indentation contains tabs
+./src/sprites.py:57:9: E117 over-indented
+./src/sprites.py:57:60: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:58:1: W191 indentation contains tabs
+./src/sprites.py:59:1: W191 indentation contains tabs
+./src/sprites.py:59:37: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:60:1: W191 indentation contains tabs
+./src/sprites.py:60:9: E117 over-indented
+./src/sprites.py:60:60: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:61:1: W191 indentation contains tabs
+./src/sprites.py:62:1: W191 indentation contains tabs
+./src/sprites.py:62:37: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:63:1: W191 indentation contains tabs
+./src/sprites.py:63:9: E117 over-indented
+./src/sprites.py:63:60: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:64:1: W191 indentation contains tabs
+./src/sprites.py:65:1: W191 indentation contains tabs
+./src/sprites.py:65:37: F405 'STOP' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:66:1: W191 indentation contains tabs
+./src/sprites.py:66:9: E117 over-indented
+./src/sprites.py:67:1: W191 indentation contains tabs
+./src/sprites.py:68:1: W191 indentation contains tabs
+./src/sprites.py:70:1: W191 indentation contains tabs
+./src/sprites.py:71:1: W191 indentation contains tabs
+./src/sprites.py:71:5: E117 over-indented
+./src/sprites.py:72:1: W191 indentation contains tabs
+./src/sprites.py:72:7: E117 over-indented
+./src/sprites.py:74:1: E302 expected 2 blank lines, found 1
+./src/sprites.py:75:1: W191 indentation contains tabs
+./src/sprites.py:75:3: E117 over-indented
+./src/sprites.py:76:1: W191 indentation contains tabs
+./src/sprites.py:76:5: E117 over-indented
+./src/sprites.py:77:1: W191 indentation contains tabs
+./src/sprites.py:77:15: F405 'BLINKY' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:77:21: E231 missing whitespace after ':'
+./src/sprites.py:77:25: F405 'PINKY' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:77:30: E231 missing whitespace after ':'
+./src/sprites.py:77:34: F405 'INKY' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:77:38: E231 missing whitespace after ':'
+./src/sprites.py:77:42: F405 'CLYDE' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:77:47: E231 missing whitespace after ':'
+./src/sprites.py:78:1: W191 indentation contains tabs
+./src/sprites.py:79:1: W191 indentation contains tabs
+./src/sprites.py:81:1: W191 indentation contains tabs
+./src/sprites.py:82:1: W191 indentation contains tabs
+./src/sprites.py:82:5: E117 over-indented
+./src/sprites.py:84:1: W191 indentation contains tabs
+./src/sprites.py:85:1: W191 indentation contains tabs
+./src/sprites.py:85:56: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:85:69: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:86:1: W191 indentation contains tabs
+./src/sprites.py:86:59: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:86:70: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:86:80: E501 line too long (81 > 79 characters)
+./src/sprites.py:87:1: W191 indentation contains tabs
+./src/sprites.py:89:1: W191 indentation contains tabs
+./src/sprites.py:90:1: W191 indentation contains tabs
+./src/sprites.py:90:5: E117 over-indented
+./src/sprites.py:91:1: W191 indentation contains tabs
+./src/sprites.py:91:37: F405 'SCATTER' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:91:46: F405 'CHASE' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:92:1: W191 indentation contains tabs
+./src/sprites.py:92:7: E117 over-indented
+./src/sprites.py:92:35: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:93:1: W191 indentation contains tabs
+./src/sprites.py:93:9: E117 over-indented
+./src/sprites.py:94:1: W191 indentation contains tabs
+./src/sprites.py:94:37: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:95:1: W191 indentation contains tabs
+./src/sprites.py:95:9: E117 over-indented
+./src/sprites.py:96:1: W191 indentation contains tabs
+./src/sprites.py:96:37: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:97:1: W191 indentation contains tabs
+./src/sprites.py:97:9: E117 over-indented
+./src/sprites.py:98:1: W191 indentation contains tabs
+./src/sprites.py:98:37: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:99:1: W191 indentation contains tabs
+./src/sprites.py:99:9: E117 over-indented
+./src/sprites.py:100:1: W191 indentation contains tabs
+./src/sprites.py:100:38: F405 'FREIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:101:1: W191 indentation contains tabs
+./src/sprites.py:101:7: E117 over-indented
+./src/sprites.py:102:1: W191 indentation contains tabs
+./src/sprites.py:102:38: F405 'SPAWN' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:103:1: W191 indentation contains tabs
+./src/sprites.py:103:7: E117 over-indented
+./src/sprites.py:103:35: F405 'LEFT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:104:1: W191 indentation contains tabs
+./src/sprites.py:104:9: E117 over-indented
+./src/sprites.py:105:1: W191 indentation contains tabs
+./src/sprites.py:105:37: F405 'RIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:106:1: W191 indentation contains tabs
+./src/sprites.py:106:9: E117 over-indented
+./src/sprites.py:107:1: W191 indentation contains tabs
+./src/sprites.py:107:37: F405 'DOWN' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:108:1: W191 indentation contains tabs
+./src/sprites.py:108:9: E117 over-indented
+./src/sprites.py:109:1: W191 indentation contains tabs
+./src/sprites.py:109:37: F405 'UP' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:110:1: W191 indentation contains tabs
+./src/sprites.py:110:7: E101 indentation contains mixed spaces and tabs
+./src/sprites.py:110:10: E111 indentation is not a multiple of 4
+./src/sprites.py:114:1: W191 indentation contains tabs
+./src/sprites.py:114:3: E117 over-indented
+./src/sprites.py:115:1: W191 indentation contains tabs
+./src/sprites.py:115:5: E117 over-indented
+./src/sprites.py:116:1: W191 indentation contains tabs
+./src/sprites.py:117:1: W191 indentation contains tabs
+./src/sprites.py:117:21: E231 missing whitespace after ':'
+./src/sprites.py:117:25: E231 missing whitespace after ','
+./src/sprites.py:117:31: E231 missing whitespace after ':'
+./src/sprites.py:117:35: E231 missing whitespace after ','
+./src/sprites.py:117:41: E231 missing whitespace after ':'
+./src/sprites.py:117:45: E231 missing whitespace after ','
+./src/sprites.py:117:51: E231 missing whitespace after ':'
+./src/sprites.py:117:55: E231 missing whitespace after ','
+./src/sprites.py:117:62: E231 missing whitespace after ':'
+./src/sprites.py:117:66: E231 missing whitespace after ','
+./src/sprites.py:117:73: E231 missing whitespace after ':'
+./src/sprites.py:117:77: E231 missing whitespace after ','
+./src/sprites.py:117:80: E501 line too long (81 > 79 characters)
+./src/sprites.py:118:1: W191 indentation contains tabs
+./src/sprites.py:120:1: W191 indentation contains tabs
+./src/sprites.py:121:1: W191 indentation contains tabs
+./src/sprites.py:121:5: E117 over-indented
+./src/sprites.py:123:1: W191 indentation contains tabs
+./src/sprites.py:124:1: W191 indentation contains tabs
+./src/sprites.py:124:20: E222 multiple spaces after operator
+./src/sprites.py:124:57: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:124:70: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:124:80: E501 line too long (80 > 79 characters)
+./src/sprites.py:125:1: W191 indentation contains tabs
+./src/sprites.py:125:59: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:125:70: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:125:80: E501 line too long (81 > 79 characters)
+./src/sprites.py:126:1: W191 indentation contains tabs
+./src/sprites.py:130:1: W191 indentation contains tabs
+./src/sprites.py:130:3: E117 over-indented
+./src/sprites.py:131:1: W191 indentation contains tabs
+./src/sprites.py:131:5: E117 over-indented
+./src/sprites.py:132:1: W191 indentation contains tabs
+./src/sprites.py:134:1: W191 indentation contains tabs
+./src/sprites.py:135:1: W191 indentation contains tabs
+./src/sprites.py:135:5: E117 over-indented
+./src/sprites.py:136:1: W191 indentation contains tabs
+./src/sprites.py:136:7: E117 over-indented
+./src/sprites.py:138:1: W191 indentation contains tabs
+./src/sprites.py:139:1: W191 indentation contains tabs
+./src/sprites.py:139:5: E117 over-indented
+./src/sprites.py:140:1: W191 indentation contains tabs
+./src/sprites.py:141:1: W191 indentation contains tabs
+./src/sprites.py:141:7: E117 over-indented
+./src/sprites.py:141:41: E231 missing whitespace after ','
+./src/sprites.py:143:1: W191 indentation contains tabs
+./src/sprites.py:144:1: W191 indentation contains tabs
+./src/sprites.py:144:56: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:144:69: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:145:1: W191 indentation contains tabs
+./src/sprites.py:145:59: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:145:70: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:145:80: E501 line too long (81 > 79 characters)
+./src/sprites.py:146:1: W191 indentation contains tabs
+./src/sprites.py:150:1: W191 indentation contains tabs
+./src/sprites.py:150:3: E117 over-indented
+./src/sprites.py:151:1: W191 indentation contains tabs
+./src/sprites.py:151:5: E117 over-indented
+./src/sprites.py:152:1: W191 indentation contains tabs
+./src/sprites.py:153:1: W191 indentation contains tabs
+./src/sprites.py:155:1: W191 indentation contains tabs
+./src/sprites.py:156:1: W191 indentation contains tabs
+./src/sprites.py:156:5: E117 over-indented
+./src/sprites.py:156:45: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:156:56: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:158:1: W191 indentation contains tabs
+./src/sprites.py:159:1: W191 indentation contains tabs
+./src/sprites.py:159:5: E117 over-indented
+./src/sprites.py:161:1: W191 indentation contains tabs
+./src/sprites.py:162:1: W191 indentation contains tabs
+./src/sprites.py:162:5: E117 over-indented
+./src/sprites.py:163:1: W191 indentation contains tabs
+./src/sprites.py:163:7: E117 over-indented
+./src/sprites.py:164:1: W191 indentation contains tabs
+./src/sprites.py:164:9: E117 over-indented
+./src/sprites.py:165:1: W191 indentation contains tabs
+./src/sprites.py:165:11: E117 over-indented
+./src/sprites.py:166:1: W191 indentation contains tabs
+./src/sprites.py:167:1: W191 indentation contains tabs
+./src/sprites.py:168:1: W191 indentation contains tabs
+./src/sprites.py:169:1: W191 indentation contains tabs
+./src/sprites.py:169:40: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:169:55: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:170:1: W191 indentation contains tabs
+./src/sprites.py:171:1: W191 indentation contains tabs
+./src/sprites.py:171:11: E117 over-indented
+./src/sprites.py:172:1: W191 indentation contains tabs
+./src/sprites.py:172:40: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:172:55: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/sprites.py:174:1: W191 indentation contains tabs
+./src/sprites.py:176:1: W191 indentation contains tabs
+./src/sprites.py:177:1: W191 indentation contains tabs
+./src/sprites.py:179:1: W391 blank line at end of file
+./src/text.py:4:1: F403 'from src.constants import *' used; unable to detect undefined names
+./src/text.py:6:1: E302 expected 2 blank lines, found 1
+./src/text.py:7:1: W191 indentation contains tabs
+./src/text.py:7:51: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:7:60: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:7:62: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:7:76: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:7:78: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:7:80: E501 line too long (84 > 79 characters)
+./src/text.py:8:1: W191 indentation contains tabs
+./src/text.py:9:1: W191 indentation contains tabs
+./src/text.py:10:1: W191 indentation contains tabs
+./src/text.py:11:1: W191 indentation contains tabs
+./src/text.py:12:1: W191 indentation contains tabs
+./src/text.py:13:1: W191 indentation contains tabs
+./src/text.py:14:1: W191 indentation contains tabs
+./src/text.py:15:1: W191 indentation contains tabs
+./src/text.py:16:1: W191 indentation contains tabs
+./src/text.py:17:1: W191 indentation contains tabs
+./src/text.py:18:1: W191 indentation contains tabs
+./src/text.py:19:1: W191 indentation contains tabs
+./src/text.py:21:1: W191 indentation contains tabs
+./src/text.py:22:1: W191 indentation contains tabs
+./src/text.py:24:1: W191 indentation contains tabs
+./src/text.py:25:1: W191 indentation contains tabs
+./src/text.py:27:1: W191 indentation contains tabs
+./src/text.py:28:1: W191 indentation contains tabs
+./src/text.py:29:1: W191 indentation contains tabs
+./src/text.py:31:1: W191 indentation contains tabs
+./src/text.py:32:1: W191 indentation contains tabs
+./src/text.py:33:1: W191 indentation contains tabs
+./src/text.py:34:1: W191 indentation contains tabs
+./src/text.py:35:1: W191 indentation contains tabs
+./src/text.py:36:1: W191 indentation contains tabs
+./src/text.py:37:1: W191 indentation contains tabs
+./src/text.py:39:1: W191 indentation contains tabs
+./src/text.py:40:1: W191 indentation contains tabs
+./src/text.py:41:1: W191 indentation contains tabs
+./src/text.py:42:1: W191 indentation contains tabs
+./src/text.py:46:1: W191 indentation contains tabs
+./src/text.py:47:1: W191 indentation contains tabs
+./src/text.py:48:1: W191 indentation contains tabs
+./src/text.py:49:1: W191 indentation contains tabs
+./src/text.py:50:1: W191 indentation contains tabs
+./src/text.py:50:17: F405 'READYTXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:52:1: W191 indentation contains tabs
+./src/text.py:52:49: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:52:51: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:52:60: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:52:62: E251 unexpected spaces around keyword / parameter equals
+./src/text.py:53:1: W191 indentation contains tabs
+./src/text.py:54:1: W191 indentation contains tabs
+./src/text.py:55:1: W191 indentation contains tabs
+./src/text.py:57:1: W191 indentation contains tabs
+./src/text.py:58:1: W191 indentation contains tabs
+./src/text.py:60:1: W191 indentation contains tabs
+./src/text.py:61:1: W191 indentation contains tabs
+./src/text.py:61:10: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/text.py:62:1: W191 indentation contains tabs
+./src/text.py:62:16: F405 'SCORETXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:62:47: F405 'WHITE' may be undefined, or defined from star imports: src.constants
+./src/text.py:62:57: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/text.py:63:1: W191 indentation contains tabs
+./src/text.py:63:16: F405 'LEVELTXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:63:50: F405 'WHITE' may be undefined, or defined from star imports: src.constants
+./src/text.py:63:62: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/text.py:63:73: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/text.py:63:80: E501 line too long (89 > 79 characters)
+./src/text.py:64:1: W191 indentation contains tabs
+./src/text.py:64:11: F405 'TILEHEIGHT' may be undefined, or defined from star imports: src.constants
+./src/text.py:65:1: W191 indentation contains tabs
+./src/text.py:65:16: F405 'READYTXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:65:43: F405 'YELLOW' may be undefined, or defined from star imports: src.constants
+./src/text.py:65:58: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/text.py:65:80: E501 line too long (95 > 79 characters)
+./src/text.py:66:1: W191 indentation contains tabs
+./src/text.py:66:16: F405 'PAUSETXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:66:44: F405 'YELLOW' may be undefined, or defined from star imports: src.constants
+./src/text.py:66:60: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/text.py:66:80: E501 line too long (97 > 79 characters)
+./src/text.py:67:1: W191 indentation contains tabs
+./src/text.py:67:16: F405 'GAMEOVERTXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:67:49: F405 'YELLOW' may be undefined, or defined from star imports: src.constants
+./src/text.py:67:61: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/text.py:67:80: E501 line too long (98 > 79 characters)
+./src/text.py:68:1: W191 indentation contains tabs
+./src/text.py:68:25: F405 'WHITE' may be undefined, or defined from star imports: src.constants
+./src/text.py:69:1: W191 indentation contains tabs
+./src/text.py:69:25: F405 'WHITE' may be undefined, or defined from star imports: src.constants
+./src/text.py:69:37: F405 'TILEWIDTH' may be undefined, or defined from star imports: src.constants
+./src/text.py:71:1: W191 indentation contains tabs
+./src/text.py:72:1: W191 indentation contains tabs
+./src/text.py:73:1: W191 indentation contains tabs
+./src/text.py:74:1: W191 indentation contains tabs
+./src/text.py:75:1: W191 indentation contains tabs
+./src/text.py:77:1: W191 indentation contains tabs
+./src/text.py:78:1: W191 indentation contains tabs
+./src/text.py:79:1: W191 indentation contains tabs
+./src/text.py:81:1: W191 indentation contains tabs
+./src/text.py:82:1: W191 indentation contains tabs
+./src/text.py:82:16: F405 'READYTXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:83:1: W191 indentation contains tabs
+./src/text.py:83:16: F405 'PAUSETXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:84:1: W191 indentation contains tabs
+./src/text.py:84:16: F405 'GAMEOVERTXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:86:1: W191 indentation contains tabs
+./src/text.py:87:1: W191 indentation contains tabs
+./src/text.py:87:19: F405 'SCORETXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:89:1: W191 indentation contains tabs
+./src/text.py:90:1: W191 indentation contains tabs
+./src/text.py:90:19: F405 'LEVELTXT' may be undefined, or defined from star imports: src.constants
+./src/text.py:92:1: W191 indentation contains tabs
+./src/text.py:93:1: W191 indentation contains tabs
+./src/text.py:94:1: W191 indentation contains tabs
+./src/text.py:96:1: W191 indentation contains tabs
+./src/text.py:97:1: W191 indentation contains tabs
+./src/text.py:98:1: W191 indentation contains tabs
+./src/text.py:99:1: W391 blank line at end of file
+./src/vector.py:3:1: E302 expected 2 blank lines, found 1
+./src/vector.py:4:1: W191 indentation contains tabs
+./src/vector.py:4:22: E251 unexpected spaces around keyword / parameter equals
+./src/vector.py:4:24: E251 unexpected spaces around keyword / parameter equals
+./src/vector.py:4:29: E251 unexpected spaces around keyword / parameter equals
+./src/vector.py:4:31: E251 unexpected spaces around keyword / parameter equals
+./src/vector.py:5:1: W191 indentation contains tabs
+./src/vector.py:6:1: W191 indentation contains tabs
+./src/vector.py:7:1: W191 indentation contains tabs
+./src/vector.py:9:1: W191 indentation contains tabs
+./src/vector.py:10:1: W191 indentation contains tabs
+./src/vector.py:10:52: E202 whitespace before ')'
+./src/vector.py:12:1: W191 indentation contains tabs
+./src/vector.py:13:1: W191 indentation contains tabs
+./src/vector.py:13:52: E202 whitespace before ')'
+./src/vector.py:15:1: W191 indentation contains tabs
+./src/vector.py:16:1: W191 indentation contains tabs
+./src/vector.py:16:34: E202 whitespace before ')'
+./src/vector.py:18:1: W191 indentation contains tabs
+./src/vector.py:19:1: W191 indentation contains tabs
+./src/vector.py:19:50: E202 whitespace before ')'
+./src/vector.py:21:1: W191 indentation contains tabs
+./src/vector.py:22:1: W191 indentation contains tabs
+./src/vector.py:23:1: W191 indentation contains tabs
+./src/vector.py:23:65: E202 whitespace before ')'
+./src/vector.py:24:1: W191 indentation contains tabs
+./src/vector.py:26:1: W191 indentation contains tabs
+./src/vector.py:27:1: W191 indentation contains tabs
+./src/vector.py:29:1: W191 indentation contains tabs
+./src/vector.py:30:1: W191 indentation contains tabs
+./src/vector.py:31:1: W191 indentation contains tabs
+./src/vector.py:32:1: W191 indentation contains tabs
+./src/vector.py:33:1: W191 indentation contains tabs
+./src/vector.py:35:1: W191 indentation contains tabs
+./src/vector.py:36:1: W191 indentation contains tabs
+./src/vector.py:38:1: W191 indentation contains tabs
+./src/vector.py:39:1: W191 indentation contains tabs
+./src/vector.py:41:1: W191 indentation contains tabs
+./src/vector.py:42:1: W191 indentation contains tabs
+./src/vector.py:44:1: W191 indentation contains tabs
+./src/vector.py:45:1: W191 indentation contains tabs
+./src/vector.py:45:16: E203 whitespace before ','
+./src/vector.py:47:1: W191 indentation contains tabs
+./src/vector.py:48:1: W191 indentation contains tabs
+./src/vector.py:48:21: E203 whitespace before ','
+./src/vector.py:50:1: W191 indentation contains tabs
+./src/vector.py:51:1: W191 indentation contains tabs
+./test.py:3:80: E501 line too long (94 > 79 characters)
+./test.py:11:80: E501 line too long (96 > 79 characters)
+./test.py:18:80: E501 line too long (81 > 79 characters)
+make: *** [Makefile:21: lint] Error 1
+
+ ~/Common_Core/Pacman/Pacman  main !20 ?7                                                              
+> 
+
+

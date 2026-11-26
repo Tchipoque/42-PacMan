@@ -9,7 +9,7 @@ DEATH = 5
 
 class Spritesheet(object):
 	def __init__(self):
-			self.sheet = pygame.image.load("assets/spritesheet.png").convert()
+			self.sheet = pygame.image.load("spritesheet.png").convert()
 			transcolor = self.sheet.get_at((0,0))
 			self.sheet.set_colorkey(transcolor)
 			width = int(self.sheet.get_width() / BASETILEWIDTH * TILEWIDTH)
@@ -125,26 +125,31 @@ class FruitSprites(Spritesheet):
 			scaled_image = pygame.transform.scale(original_image, (TILEWIDTH, TILEHEIGHT))
 			return scaled_image
 
-
 class LifeSprites(Spritesheet):
-		def __init__(self, numlives):
-				Spritesheet.__init__(self)
-				self.resetLives(numlives)
+    def __init__(self, numlives):
+        Spritesheet.__init__(self)
+        self.resetLives(numlives)
 
-		def removeImage(self):
-				if len(self.images) > 0:
-						self.images.pop(0)
+    def removeImage(self):
+        if len(self.images) > 0:
+            self.images.pop(0)
 
-		def resetLives(self, numlives):
-				self.images = []
-				for i in range(numlives):
-						self.images.append(self.getImage(0,0))
+    def addLife(self):
+        self.images.append(self.getImage(0, 0))
 
-		def getImage(self, x, y):
-			original_image = Spritesheet.getImage(self, x, y, 2*TILEWIDTH, 2*TILEHEIGHT)
-			scaled_image = pygame.transform.scale(original_image, (TILEWIDTH, TILEHEIGHT))
-			return scaled_image
+    def resetLives(self, numlives):
+        self.images = []
+        for i in range(numlives):
+            self.images.append(self.getImage(0, 0))
 
+    def getImage(self, x, y):
+        original_image = Spritesheet.getImage(
+            self, x, y, 2 * TILEWIDTH, 2 * TILEHEIGHT
+        )
+        scaled_image = pygame.transform.scale(
+            original_image, (TILEWIDTH, TILEHEIGHT)
+        )
+        return scaled_image
 
 class MazeSprites(Spritesheet):
 		def __init__(self, mazefile, rotfile):

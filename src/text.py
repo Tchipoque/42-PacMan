@@ -15,7 +15,7 @@ class Text():
 		self.lifespan = time
 		self.label = None
 		self.destroy = False
-		self.setupFont("assets/PressStart2P-Regular.ttf")
+		self.setupFont("PressStart2P-Regular.ttf")
 		self.createLabel()
 
 	def setupFont(self, fontpath):
@@ -41,59 +41,83 @@ class Text():
 			x, y = self.position.asTuple()
 			screen.blit(self.label, (x, y))
 
-
 class TextGroup():
-	def __init__(self):
-		self.nextid = 10
-		self.alltext = {}
-		self.setupText()
-		self.showText(READYTXT)
+    def __init__(self):
+        self.nextid = 10
+        self.alltext = {}
+        self.setupText()
+        self.showText(READYTXT)
 
-	def addText(self, text, color, x, y, size, time = None, id = None):
-		self.nextid += 1
-		self.alltext[self.nextid] = Text(text, color, x, y, size, time=time, id=id)
-		return self.nextid
+    def addText(self, text, color, x, y, size, time=None, id=None):
+        self.nextid += 1
+        self.alltext[self.nextid] = Text(
+            text, color, x, y, size, time=time, id=id
+        )
+        return self.nextid
 
-	def removeText(self, id):
-		self.alltext.pop(id)
+    def removeText(self, id):
+        self.alltext.pop(id)
 
-	def setupText(self):
-		size = TILEHEIGHT - 10
-		self.alltext[SCORETXT] = Text("0".zfill(8), WHITE, 0, TILEHEIGHT, size)
-		self.alltext[LEVELTXT] = Text(str(1).zfill(3), WHITE, 16 * TILEWIDTH, TILEHEIGHT, size)
-		mid_y = TILEHEIGHT * 13
-		self.alltext[READYTXT] = Text("READY!", YELLOW, 8.25 * TILEWIDTH, mid_y, size, visible=False)
-		self.alltext[PAUSETXT] = Text("PAUSED!", YELLOW, 7.625 * TILEWIDTH, mid_y, size, visible=False)
-		self.alltext[GAMEOVERTXT] = Text("GAMEOVER!", YELLOW, 7 * TILEWIDTH, mid_y, size, visible=False)
-		self.addText("SCORE", WHITE, 0, 0, size)
-		self.addText("LEVEL", WHITE, 15 * TILEWIDTH, 0, size)
+    def setupText(self):
+        size = TILEHEIGHT - 10
 
-	def update(self, dt):
-		for tkey in list(self.alltext.keys()):
-			self.alltext[tkey].update(dt)
-			if self.alltext[tkey].destroy:
-				self.removeText(tkey)
+        self.alltext[SCORETXT] = Text(
+            "0".zfill(8), WHITE, 0, TILEHEIGHT, size
+        )
+        self.alltext[LEVELTXT] = Text(
+            str(1).zfill(3), WHITE, 16 * TILEWIDTH, TILEHEIGHT, size
+        )
+        self.alltext[TIMERTXT] = Text(
+            "120", WHITE, 8 * TILEWIDTH, TILEHEIGHT, size
+        )
 
-	def showText(self, id):
-		self.hideText()
-		self.alltext[id].visible = True
+        mid_y = TILEHEIGHT * 13
 
-	def hideText(self):
-		self.alltext[READYTXT].visible = False
-		self.alltext[PAUSETXT].visible = False
-		self.alltext[GAMEOVERTXT].visible = False
+        self.alltext[READYTXT] = Text(
+            "READY!", YELLOW, 8.25 * TILEWIDTH, mid_y, size,
+            visible=False
+        )
+        self.alltext[PAUSETXT] = Text(
+            "PAUSED!", YELLOW, 7.625 * TILEWIDTH, mid_y, size,
+            visible=False
+        )
+        self.alltext[GAMEOVERTXT] = Text(
+            "GAMEOVER!", YELLOW, 7 * TILEWIDTH, mid_y, size,
+            visible=False
+        )
 
-	def updateScore(self, score):
-		self.updateText(SCORETXT, str(score).zfill(8))
+        self.addText("SCORE", WHITE, 0, 0, size)
+        self.addText("TIME", WHITE, 8 * TILEWIDTH, 0, size)
+        self.addText("LEVEL", WHITE, 15 * TILEWIDTH, 0, size)
 
-	def updateLevel(self, level):
-		self.updateText(LEVELTXT, str(level + 1).zfill(3))
+    def update(self, dt):
+        for tkey in list(self.alltext.keys()):
+            self.alltext[tkey].update(dt)
+            if self.alltext[tkey].destroy:
+                self.removeText(tkey)
 
-	def updateText(self, id, value):
-		if id in self.alltext.keys():
-			self.alltext[id].setText(value)
+    def showText(self, id):
+        self.hideText()
+        self.alltext[id].visible = True
 
-	def render(self, screen):
-		for tkey in list(self.alltext.keys()):
-			self.alltext[tkey].render(screen)
+    def hideText(self):
+        self.alltext[READYTXT].visible = False
+        self.alltext[PAUSETXT].visible = False
+        self.alltext[GAMEOVERTXT].visible = False
 
+    def updateScore(self, score):
+        self.updateText(SCORETXT, str(score).zfill(8))
+
+    def updateLevel(self, level):
+        self.updateText(LEVELTXT, str(level + 1).zfill(3))
+
+    def updateTimer(self, time_left):
+        self.updateText(TIMERTXT, str(int(time_left)).zfill(3))
+
+    def updateText(self, id, value):
+        if id in self.alltext.keys():
+            self.alltext[id].setText(value)
+
+    def render(self, screen):
+        for tkey in list(self.alltext.keys()):
+            self.alltext[tkey].render(screen)
